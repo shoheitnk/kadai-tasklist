@@ -31,8 +31,7 @@ class SessionsController < ApplicationController
       return true
     else
       #ログイン失敗
-      session[:use_id] = @user.id
-      retrun false
+      return false
     end
   end
 end
